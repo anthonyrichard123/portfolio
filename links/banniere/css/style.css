@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+
+    height: 100%;
+
+    width: 100%;
+
+    margin: 0;
+
+}
+
+.gridcontainer{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    display: grid;
+
+grid-template-rows: 10% 40% 10% 40%;
+grid-template-columns: 5% 90% 5%;
+
+grid-template-areas:
+
+"lienyt texte1 google"
+". banniere1 ."
+". texte2 ."
+". banniere2 ."
+
+}
+.texte1{
+    grid-area: texte1;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+    background-color: whitesmoke;
+}
+    .texte2{
+        grid-area: texte2;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3em;
+}
+@font-face {
+    font-family: "1";
+    src: url("Smokum-Regular.ttf");
+}
+@font-face {
+    font-family: "2";
+    src: url("Nabla-Regular-VariableFont_EDPT\,EHLT.ttf");
+}
+.banniere1{
+    grid-area: banniere1;
+    text-align: center;
+    font-size: 10em;
+font-family: "1";
+display: flex;
+justify-content: center;
+align-items: center;
+animation-name: ban1;
+animation: ban1 10s infinite alternate;
+
+
+}
+@keyframes ban1{
+    0% {background-color: red;}
+    25%{background-color: orange;}
+    50%{background-color: blue;}
+    75%{background-color: green;}
+  100% {background-color: yellow;}
+}
+.banniere2 {
+    grid-area: banniere2;
+    text-align: center;
+    font-size: 8em;
+    background:linear-gradient(blue, white, red);
+    font-family: "2";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-out;
+    display:inline-block;
+}
+.banniere2:hover{
+    transform: translate(0, -30px);
+}
+nav{
+    background-color: black;
+    height: 50px;
+}
+nav ul {
+    height: 50px;
+    width: 300px;
+    margin: 0 auto;
+}
+nav ul li {
+    list-style-type: none;
+    width: 150px;
+    float: left;
+    text-align: center;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    display: block;
+    transition: transform 1s ease-out;
+}
+li a:hover{
+    background-color: blueviolet;
+    color: yellow;
+    transform: translate(0, -10px);
+}
+.lienyt{
+    color:white
+}
+.valorant{
+    color: white;
+}

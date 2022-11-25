@@ -1,0 +1,58 @@
+body {
+    background-color: #f7e4b7;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+}
+#depart{
+    display:grid;
+    height: 1000px;
+    width:80%;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:   1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . oeilG . oeilD ."
+        ". . . jouegauche . nez . jouedroite"
+        ". . . . . bouche . ."
+        ". . . . . . . ."
+        ;
+}
+
+
+#depart > img {
+    display: block;
+}
+
+#texte_css {
+    position: absolute;
+    top: 600px;
+    font-size: 3em;
+}
+.oeildroit
+{
+    grid-area: oeilD;
+}
+.oeilgauche
+{
+    grid-area: oeilG;
+}
+.nez{
+    grid-area: nez;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.bouche{
+    grid-area: bouche;
+}
+.joueG
+{
+    grid-area: jouegauche;
+}
+.joueD
+{
+    grid-area: jouedroite;
+}

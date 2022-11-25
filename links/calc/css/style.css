@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    width:100%;
+    margin:0;
+}
+#maincontainer {
+    display: grid; 
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    grid-template-columns: 30% 40% 30%; 
+    grid-template-rows: 10% 80% 10%; 
+    grid-template-areas: 
+    ". . ."
+    ". calcu ."
+    ". . .";
+  }
+.calcu{
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: 20% 20% 20% 20% 20%; 
+    grid-template-areas: 
+      "affichage affichage affichage affichage "
+      "sept huit neuf plus"
+      "quatre cinq six moin"
+      "un deux trois egal"
+      "zero point del egal"; 
+      grid-area: calcu;
+  }
+.affichage{
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: affichage;
+}
+.un{
+
+}
+.deux{
+
+}
+.trois{
+
+}
+.quatre{
+
+}
+.cinq{
+
+}
+.six{
+
+}
+.huit{
+
+}
+.neuf{
+
+}
+.point{
+
+}
+.del{
+
+}
+.egal{
+
+}
+.plus{
+
+}
+.moin{
+    
+}

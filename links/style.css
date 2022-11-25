@@ -1,0 +1,48 @@
+html, body 
+{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.container_flex
+{
+    display:flex;
+    background-color: aqua;
+    height: 100%;
+}
+.container1
+{
+    display:flex;
+    background-color:blue;
+    flex-grow: 3;
+    flex-direction: column;
+}
+.container2
+{
+    display:flex;
+    background-color:red;
+    height: 60%;
+}
+.nav
+{
+    display:flex;
+    flex-grow: 1;
+}
+.footer
+{
+    height: 20%;
+}
+.header
+{
+    height: 20%;
+}
+.aside 
+{
+    flex-grow: 1;
+    background-color: blueviolet;
+}
+.article
+{
+    flex-grow: 3;
+}
+
